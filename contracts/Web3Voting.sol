@@ -54,4 +54,6 @@ contract Web3Voting {
 //************************emit the candidate voter for*****************************        
         emit VoteEvent(_candidateId);        
     }
+
+///******************SillyNFTier***************************************************    
 }
