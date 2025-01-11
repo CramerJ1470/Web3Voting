@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.28;
+pragma solidity ^0.8.9;
 
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
@@ -12,7 +12,8 @@ contract Web3Voting {
         string name;
         uint voteCount;
     }
-
+    string public name1;
+    string public name2;
  //************candidates = All the candidates being voted for*****************   
     mapping(uint=>Candidate) public candidates;
 
@@ -29,8 +30,10 @@ contract Web3Voting {
 
 //*****************hard coding candidtaes till we create add later***************
     constructor (){
-        addCandidate("Obama");
-        addCandidate("Clinton");
+       name1 = "Obama";
+       name2 = "Clinton";
+        addCandidate(name1);
+        addCandidate(name2);
 
     }
     function addCandidate(string memory _name) private {
