@@ -30,8 +30,8 @@ contract Web3Voting {
 
 //*****************hard coding candidtaes till we create add later***************
     constructor (){
-       name1 = "Obama";
-       name2 = "Clinton";
+       name1 = "Kathy Hochul";
+       name2 = "Bruce Blakeman";
         addCandidate(name1);
         addCandidate(name2);
 
